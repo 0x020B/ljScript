@@ -95,7 +95,6 @@ function CheckIn(){ // 进入扬州
 	if (g_obj_map.get("msg_jh_list")==undefined){
 		setTimeout(function(){CheckIn();},500);
 	}else{
-        checkinstep = 4;
 		if (checkinstep==0){
 			pushCmd("share_ok 1");
 			pushCmd("share_ok 2");
