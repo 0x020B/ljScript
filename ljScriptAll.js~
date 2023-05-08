@@ -697,6 +697,13 @@ function killtianjian(){
 var tianjian=new tianjianGu;
 //-----------初始化代码----------
 (function (window) {
+    window.go = function(dir) {
+	console.debug("开始执行：", dir);
+	var d = dir.split(";");
+	for (var i = 0; i < d.length; i++)
+	    pushCmd(d[i], 0);
+    };
+
 
     var ql_w = {
 	'书房': 1,
